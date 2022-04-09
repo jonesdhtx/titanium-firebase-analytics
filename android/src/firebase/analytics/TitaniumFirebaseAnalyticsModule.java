@@ -97,6 +97,8 @@ public class TitaniumFirebaseAnalyticsModule extends KrollModule
 			}
 
 			data.put("identifier", task.getResult());
+
+			callback.call(getKrollObject(), data);
 		});
 	}
 
